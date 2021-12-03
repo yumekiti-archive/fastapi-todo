@@ -5,7 +5,7 @@ console.log(
 let app = document.getElementById("app")
 app.innerHTML = "<h1>Hello, World</h1>"
 
-.get('/').then((response) => {
+axios.get('/').then((response) => {
     console.log(response);
     app.innerHTML += "<p>" + response.data.Hello + "</p>"
 })
